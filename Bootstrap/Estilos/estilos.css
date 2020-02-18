@@ -102,7 +102,7 @@
 }
 
 .carousel-control-prev, .carousel-control-next{
-    filter: invert();
+    filter: invert(100);
 }
 
 .videos{
