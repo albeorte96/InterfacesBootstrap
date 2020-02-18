@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Contacto</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="Imagenes/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="config/css/bootstrap.min.css">
+    <link rel="stylesheet" href="config/js/jquery-ui.css" >
+    <link rel="stylesheet" href="Estilos/estilos.css">
+  </head>
+  <style type="text/css">
+    body{
+            background: linear-gradient(#e66465, #9198e5);
+        }
+  </style>
+  <body>
+    <div class="container-fluid barra-navegacion p-0">
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom box-shadow">
+            <a class="navbar-brand mr-0 mr-md-2" href="index.html" aria-label="icono">
+              <picture>
+                <source srcset="Imagenes/icono.png" type="image/png">
+                <img src="Imagenes/icono.png" class="icono">
+               </picture>
+            </a>
+            <h5 class="my-0 mr-md-auto font-weight-normal"><a href="index.html" class="titulo">STRAP 4</a></h5>
+            <nav class="my-2 my-md-0 mr-md-3">
+              <a class="p-2 text-dark" href="index.html">Inicio</a>
+              <a class="p-2 text-dark" href="caracteristicas.html">Características</a>
+              <a class="p-2 text-dark" href="documentacion.html">Documentación</a>
+              <a class="p-2 text-dark" href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Formulario -->
+    <div id="progressbar"></div>
+    <section>
+      <div class="container formulario">
+        <br>
+      <h3>¿Tienes alguna duda?¿Te ha surgido algún tipo de problema?</h3>
+      <h5>Contacta con nosotros y te lo solucionaremos lo antes posible...</h5>  
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Nombre: *</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ismael" required>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Apellidos: *</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Villa" required>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Indique su dirección de e-mail: *</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com" required>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Sexo: </label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option selected="true">Seleccione su sexo</option>
+            <option>Masculino</option>
+            <option>Femenino</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect2">Seleccione el tema de su incidencia: </label>
+          <select multiple class="form-control" id="exampleFormControlSelect2">
+            <option>Estilo responsive</option>
+            <option>Imágenes o vídeos</option>
+            <option>Elaboración de formularios</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Indique su incidencia: *</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required=""></textarea>
+        </div>
+        <input type="submit" onclick="cargarBarra()" class="btn btn-success" value="Enviar">
+        <input type="reset" class="btn btn-danger" value="Limpiar">
+      </form>
+      <br>
+    </div>
+    </section>
+
+    <br><br><br>
+    <!-- Pie de página -->
+    <footer >
+      <nav aria-label="breadcrumb">
+        <ol class="col-10 offset-sm-8 col-sm-3 breadcrumb redes-sociales fixed-bottom pie">
+          <li class="breadcrumb-item"><a href="https://twitter.com/"><img src="Imagenes/twitter.png" class="img-fluid icono"></a></li>
+          <li class="breadcrumb-item"><a href="https://www.youtube.com/"><img src="Imagenes/youtube.png" class="img-fluid icono"></a></li>
+          <li class="breadcrumb-item"><a href="https://www.facebook.com/"><img src="Imagenes/facebook.png" class="img-fluid icono"></a></li>
+          <li class="breadcrumb-item"><a href="https://www.instagram.com/"><img src="Imagenes/instagram.png" class="img-fluid icono"></a></li>
+
+        </ol>
+      </nav>
+      <nav aria-label="breadcrumb">
+        <ol class="offset-10 col-2 offset-sm-11 col-sm-1 breadcrumb redes-sociales fixed-bottom pie">
+        <li class="breadcrumb-item"><a href="#"><img src="Imagenes/copy.png" class="img-fluid icono"></a></li>
+        </ol>
+      </nav>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+      function cargarBarra(){
+        $( function() {
+            $( "#progressbar" ).progressbar({ value:  100 });
+          } );
+      }
+  </script>
+    <script src="config/js/jquery.js"></script>
+    <script src="config/js/popper.min.js"></script>
+    <script src="config/js/bootstrap.min.js"></script>
+    <script src="config/js/jquery-ui.js"></script>
+  </body>
+</html>

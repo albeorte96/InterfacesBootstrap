@@ -1,0 +1,115 @@
+@font-face{
+    font-family: jungle;
+    src: url("../Fuentes/JungleLand.ttf");
+}
+
+@font-face {
+    font-family: 'simple-line-icons';
+    src: url('../Fuentes/Simple-Line-Icons.eot?v=2.4.0');
+    src: url('../Fuentes/Simple-Line-Icons.eot?v=2.4.0#iefix') format('embedded-opentype'), 
+    url('../Fuentes/Simple-Line-Icons.woff2?v=2.4.0') format('woff2'), 
+    url('../Fuentes/Simple-Line-Icons.ttf?v=2.4.0') format('truetype'), 
+    url('../Fuentes/Simple-Line-Icons.woff?v=2.4.0') format('woff'), 
+    url('../Fuentes/Simple-Line-Icons.svg?v=2.4.0#simple-line-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.titulo, .titulo:hover{
+    font-family: jungle;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+}
+
+.pie{
+    height: 4em;
+}
+.icono{
+    height: 2em;
+}
+
+.redes-sociales{
+    left: 0;
+    margin-bottom: 0;
+}
+
+.espacio-sup{
+    padding-top: 3em;
+}
+
+.barra-navegacion{
+    background-color:rgba(255,255,255,0.6);
+}
+.breadcrumb{
+    border-radius: 0 !important;
+}
+
+.icono-pantalla, .icono-ojo, .icono-llave{
+    font-family: 'simple-line-icons';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 4em;
+}
+
+.icono-pantalla:hover, .icono-ojo:hover, .icono-llave:hover{
+    font-family: 'simple-line-icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 5em;
+}
+
+.icono-pantalla:before {
+    content: "\e011";
+}
+
+.icono-llave:before {
+    content: "\e08c";
+}
+
+.icono-ojo:before {
+    content: "\e087";
+}
+
+.showcase .showcase-text{
+    padding:3rem;
+}
+
+.showcase .showcase-img{
+    min-height:30rem;
+    background-size:cover;
+}
+
+@media (min-width:768px){
+    .showcase .showcase-text{padding:7rem}
+}
+
+#titulo-documentacion{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    filter: invert();
+}
+
+.videos{
+    border-radius: 10px;
+}
+
+.formulario{
+    background-color: #FFF;
+    border-radius: 12px;
+}
